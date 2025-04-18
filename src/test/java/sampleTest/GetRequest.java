@@ -18,10 +18,10 @@ public class GetRequest {
 		
 		System.out.println("getStatusCode : "+response.getStatusCode());
 		System.out.println("getStatusLine : "+response.getStatusLine());
-		System.out.println("getSessionId : " +response.getSessionId());
 		System.out.println("getTime : "+response.getTime());
-		System.out.println("getCookies : "+response.getCookies());
+		System.out.println("getHeader 'Content-Type' : "+response.getHeader("Content-Type"));
 		System.out.println("getHeaders : "+response.getHeaders());
+		System.out.println("getCookies : "+response.getCookies());
 		System.out.println("getBody : "+response.getBody().asString());
 		
 		
