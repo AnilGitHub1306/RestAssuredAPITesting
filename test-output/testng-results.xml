@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-18T10:05:08 IST" name="Default suite" finished-at="2025-04-18T10:05:16 IST" duration-ms="8038">
+  <suite started-at="2025-04-19T14:22:53 IST" name="Default suite" finished-at="2025-04-19T14:23:03 IST" duration-ms="9799">
     <groups>
     </groups>
-    <test started-at="2025-04-18T10:05:08 IST" name="Default test" finished-at="2025-04-18T10:05:16 IST" duration-ms="8038">
-      <class name="Validations.TC011_TextInResponseBody">
-        <test-method signature="MultipleCookiesValues()[pri:0, instance:Validations.TC011_TextInResponseBody@59505b48]" started-at="2025-04-18T10:05:08 IST" name="MultipleCookiesValues" finished-at="2025-04-18T10:05:16 IST" duration-ms="7801" status="PASS">
+    <test started-at="2025-04-19T14:22:53 IST" name="Default test" finished-at="2025-04-19T14:23:03 IST" duration-ms="9799">
+      <class name="Validations.TC013_SpecificFieldValueOFResponseBody">
+        <test-method signature="SpecificFieldValueOFResponseBody__BddStyle()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:22:53 IST" name="SpecificFieldValueOFResponseBody__BddStyle" finished-at="2025-04-19T14:23:02 IST" duration-ms="8948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MultipleCookiesValues -->
-      </class> <!-- Validations.TC011_TextInResponseBody -->
+        </test-method> <!-- SpecificFieldValueOFResponseBody__BddStyle -->
+        <test-method signature="SpecificFieldValueOFResponseBody__ByValidatableResponse()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:23:02 IST" name="SpecificFieldValueOFResponseBody__ByValidatableResponse" finished-at="2025-04-19T14:23:02 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SpecificFieldValueOFResponseBody__ByValidatableResponse -->
+        <test-method signature="ValidateTheWholeResponseBody()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:23:02 IST" name="ValidateTheWholeResponseBody" finished-at="2025-04-19T14:23:03 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTheWholeResponseBody -->
+      </class> <!-- Validations.TC013_SpecificFieldValueOFResponseBody -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

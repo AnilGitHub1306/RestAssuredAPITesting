@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Validations.TC008_MultipleHeadersValue">
+      <class name="Validations.TC013_SpecificFieldValueOFResponseBody">
         <methods>
-          <include name="validateTheMultipleHeaders"/>
+          <include name="SpecificFieldValueOFResponseBody__BddStyle"/>
         </methods>
-      </class> <!-- Validations.TC008_MultipleHeadersValue -->
+      </class> <!-- Validations.TC013_SpecificFieldValueOFResponseBody -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

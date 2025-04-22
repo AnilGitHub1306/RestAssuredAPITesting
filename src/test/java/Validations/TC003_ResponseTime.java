@@ -1,12 +1,15 @@
 package Validations;
 
+import static io.restassured.RestAssured.given;
+
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
-
+import static org.hamcrest.Matchers.*;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import junit.framework.Assert;
 
 public class TC003_ResponseTime {
@@ -25,6 +28,27 @@ public class TC003_ResponseTime {
 			{Assert.assertTrue(true);} 
 		else 
 			{Assert.assertTrue(false);}
+	}
+	
+	@Test
+	public void validateTheResponseTime_ByValidatableResponse() {
 
+		RequestSpecification requestSpe = RestAssured.given();
+		Response response = requestSpe.when().get("https://reqres.in/api/users?page=2");
+
+		ResponseSpecification validateRes = requestSpe.then();
+		validateRes.time(lessThan(2000L));
+	}
+	
+	@Test
+	public void validateTheResponseTime_BddStyle() {
+
+		given()
+		
+		.when()
+			.get("https://reqres.in/api/users?page=2")
+			
+		.then()
+			.time(lessThan(2000L));
 	}
 }

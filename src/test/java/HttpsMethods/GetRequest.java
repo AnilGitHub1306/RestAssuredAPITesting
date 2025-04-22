@@ -1,4 +1,4 @@
-package sampleTest;
+package HttpsMethods;
 
 import org.testng.annotations.Test;
 
@@ -12,7 +12,9 @@ public class GetRequest {
 	public void getListOfAllUsers() {
 
 		RequestSpecification requestSpe = RestAssured.given();
-		Response response = requestSpe.when().get("https://reqres.in/api/users?page=2");
+		requestSpe.baseUri("https://reqres.in/api/users");
+		requestSpe.queryParam("page", "2");
+		Response response = requestSpe.when().get();
 		
 		System.out.println(response.asPrettyString());
 		

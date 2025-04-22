@@ -1,25 +1,49 @@
 package Validations;
 
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.lessThan;
+import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import junit.framework.Assert;
 
 public class TC004_StatusCodeText {
 
 	@Test
-	public void validateTheHttpVersionOfResponse() {
+	public void validateTheStatusCodeText() {
 
 		RequestSpecification requestSpe = RestAssured.given();
 		Response response = requestSpe.when().get("https://reqres.in/api/users?page=2");
 
-		String expectedHttpVersion = "HTTP/1.1";
-		boolean actualHttpVersion = response.getStatusLine().contains(expectedHttpVersion);
+		String expectedStatusCodeText = "OK";
+		boolean actualStatusCodeText = response.getStatusLine().contains(expectedStatusCodeText);
 
-		System.out.println(response.getStatusLine());
-		Assert.assertTrue(actualHttpVersion);
+		Assert.assertTrue(actualStatusCodeText);
+	}
+	
+	@Test
+	public void validateTheStatusCodeText_ByValidatableResponse() {
 
+		RequestSpecification requestSpe = RestAssured.given();
+		Response response = requestSpe.when().get("https://reqres.in/api/users?page=2");
+
+		ResponseSpecification validateRes = requestSpe.then();
+		validateRes.statusLine(containsString("OK"));
+	}
+	
+	@Test
+	public void validateTheStatusCodeText_BddStyle() {
+
+		given()
+		
+		.when()
+			.get("https://reqres.in/api/users?page=2")
+			
+		.then()
+			.statusLine(containsString("OK"));
 	}
 }
