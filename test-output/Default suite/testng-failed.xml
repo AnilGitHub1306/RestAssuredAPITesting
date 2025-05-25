@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Validations.TC013_SpecificFieldValueOFResponseBody">
+      <class name="HttpsMethods.CrudOperation">
         <methods>
-          <include name="SpecificFieldValueOFResponseBody__BddStyle"/>
+          <include name="creatUser"/>
+          <include name="getUser"/>
+          <include name="deleteUser"/>
+          <include name="updateUser"/>
         </methods>
-      </class> <!-- Validations.TC013_SpecificFieldValueOFResponseBody -->
+      </class> <!-- HttpsMethods.CrudOperation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

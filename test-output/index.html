@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Anil\AppData\Local\Temp\testng-eclipse-1039702886\testng-customsuite.xml</span>
+                    <span>C:\Users\Anil\AppData\Local\Temp\testng-eclipse-618268707\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Validations.TC013_SpecificFieldValueOFResponseBody" class="method navigator-link" hash-for-method="SpecificFieldValueOFResponseBody__BddStyle">SpecificFieldValueOFResponseBody__BddStyle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Validations.TC013_SpecificFieldValueOFResponseBody" class="method navigator-link" hash-for-method="SpecificFieldValueOFResponseBody__ByValidatableResponse">SpecificFieldValueOFResponseBody__ByValidatableResponse</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Validations.TC013_SpecificFieldValueOFResponseBody" class="method navigator-link" hash-for-method="ValidateTheWholeResponseBody">ValidateTheWholeResponseBody</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="SerilizationAndDeserilization.Deserilization" class="method navigator-link" hash-for-method="convertJsonDataToClassObject">convertJsonDataToClassObject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,28 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Validations.TC013_SpecificFieldValueOFResponseBody</span>
+              <span class="class-name">SerilizationAndDeserilization.Deserilization</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SpecificFieldValueOFResponseBody__BddStyle">
-                  </a> <!-- SpecificFieldValueOFResponseBody__BddStyle -->
-                  <span class="method-name">SpecificFieldValueOFResponseBody__BddStyle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SpecificFieldValueOFResponseBody__ByValidatableResponse">
-                  </a> <!-- SpecificFieldValueOFResponseBody__ByValidatableResponse -->
-                  <span class="method-name">SpecificFieldValueOFResponseBody__ByValidatableResponse</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidateTheWholeResponseBody">
-                  </a> <!-- ValidateTheWholeResponseBody -->
-                  <span class="method-name">ValidateTheWholeResponseBody</span>
+                  <a name="convertJsonDataToClassObject">
+                  </a> <!-- convertJsonDataToClassObject -->
+                  <span class="method-name">convertJsonDataToClassObject</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Anil\AppData\Local\Temp\testng-eclipse-1039702886\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Anil\AppData\Local\Temp\testng-eclipse-618268707\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Validations.TC013_SpecificFieldValueOFResponseBody&quot;/&gt;
+      &lt;class name=&quot;SerilizationAndDeserilization.Deserilization&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;convertJsonDataToClassObject&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SerilizationAndDeserilization.Deserilization --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -209,24 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SpecificFieldValueOFResponseBody__BddStyle')
-data.setCell(0, 2, 'Validations.TC013_SpecificFieldValueOFResponseBody')
-data.setCell(0, 3, 8948);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ValidateTheWholeResponseBody')
-data.setCell(1, 2, 'Validations.TC013_SpecificFieldValueOFResponseBody')
-data.setCell(1, 3, 422);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SpecificFieldValueOFResponseBody__ByValidatableResponse')
-data.setCell(2, 2, 'Validations.TC013_SpecificFieldValueOFResponseBody')
-data.setCell(2, 3, 249);
+data.setCell(0, 1, 'convertJsonDataToClassObject')
+data.setCell(0, 2, 'SerilizationAndDeserilization.Deserilization')
+data.setCell(0, 3, 1022);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,18 +224,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Validations.TC013_SpecificFieldValueOFResponseBody</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">SerilizationAndDeserilization.Deserilization</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">SpecificFieldValueOFResponseBody__BddStyle</span>
+                <span class="method-name">convertJsonDataToClassObject</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SpecificFieldValueOFResponseBody__ByValidatableResponse</span>
-                <span class="method-start">8960 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ValidateTheWholeResponseBody</span>
-                <span class="method-start">9214 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

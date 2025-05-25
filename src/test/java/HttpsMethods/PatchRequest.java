@@ -27,6 +27,7 @@ public class PatchRequest {
         RequestSpecification requestSpe = RestAssured.given();
         requestSpe.baseUri("https://reqres.in/api/users");
         requestSpe.header("Content-Type", "application/json");
+        requestSpe.header("x-api-key", "reqres-free-v1");
         requestSpe.contentType(ContentType.JSON);
         requestSpe.body(json.toJSONString());
 
@@ -48,6 +49,7 @@ public class PatchRequest {
         RequestSpecification requestSpe = RestAssured.given();
         requestSpe.baseUri("https://reqres.in/api/users/" + userId);
         requestSpe.header("Content-Type", "application/json");
+        requestSpe.header("x-api-key", "reqres-free-v1");
         requestSpe.contentType(ContentType.JSON);
         requestSpe.body(json1.toJSONString());
 

@@ -14,7 +14,7 @@ public class TC001_StatusCode {
 
 	@Test
 	public void validateTheStatusCode() {
-
+	
 		RequestSpecification requestSpe = RestAssured.given();
 		Response response = requestSpe.when().get("https://reqres.in/api/users?page=2");
 

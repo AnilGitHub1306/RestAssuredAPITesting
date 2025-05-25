@@ -24,8 +24,10 @@ public class PostRequest {
 		
 		RequestSpecification requestSpe = RestAssured.given();
 		requestSpe.baseUri("https://reqres.in/api/users");
+		requestSpe.queryParam("x-api-key", "reqres-free-v1");
 		requestSpe.header("Content-Type","application/Json");
 		requestSpe.contentType(ContentType.JSON);
+		requestSpe.body(json.toJSONString());
 	
 		Response response = requestSpe.when().post();
 		

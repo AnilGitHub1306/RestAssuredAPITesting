@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T14:22:53 IST" name="Default suite" finished-at="2025-04-19T14:23:03 IST" duration-ms="9799">
+  <suite started-at="2025-05-23T07:56:02 IST" name="Default suite" finished-at="2025-05-23T07:56:03 IST" duration-ms="1181">
     <groups>
     </groups>
-    <test started-at="2025-04-19T14:22:53 IST" name="Default test" finished-at="2025-04-19T14:23:03 IST" duration-ms="9799">
-      <class name="Validations.TC013_SpecificFieldValueOFResponseBody">
-        <test-method signature="SpecificFieldValueOFResponseBody__BddStyle()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:22:53 IST" name="SpecificFieldValueOFResponseBody__BddStyle" finished-at="2025-04-19T14:23:02 IST" duration-ms="8948" status="PASS">
+    <test started-at="2025-05-23T07:56:02 IST" name="Default test" finished-at="2025-05-23T07:56:03 IST" duration-ms="1181">
+      <class name="SerilizationAndDeserilization.Deserilization">
+        <test-method signature="convertJsonDataToClassObject()[pri:0, instance:SerilizationAndDeserilization.Deserilization@2a265ea9]" started-at="2025-05-23T07:56:02 IST" name="convertJsonDataToClassObject" finished-at="2025-05-23T07:56:03 IST" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SpecificFieldValueOFResponseBody__BddStyle -->
-        <test-method signature="SpecificFieldValueOFResponseBody__ByValidatableResponse()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:23:02 IST" name="SpecificFieldValueOFResponseBody__ByValidatableResponse" finished-at="2025-04-19T14:23:02 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SpecificFieldValueOFResponseBody__ByValidatableResponse -->
-        <test-method signature="ValidateTheWholeResponseBody()[pri:0, instance:Validations.TC013_SpecificFieldValueOFResponseBody@2a7f1f10]" started-at="2025-04-19T14:23:02 IST" name="ValidateTheWholeResponseBody" finished-at="2025-04-19T14:23:03 IST" duration-ms="422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateTheWholeResponseBody -->
-      </class> <!-- Validations.TC013_SpecificFieldValueOFResponseBody -->
+        </test-method> <!-- convertJsonDataToClassObject -->
+      </class> <!-- SerilizationAndDeserilization.Deserilization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

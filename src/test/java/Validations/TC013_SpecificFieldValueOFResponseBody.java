@@ -19,7 +19,7 @@ import junit.framework.Assert;
 public class TC013_SpecificFieldValueOFResponseBody {
 
 	@Test
-	public void ValidateTheWholeResponseBody() {
+	public void ValidateSpecificValueOfResponseBody() {
 
 		RequestSpecification requestSpe = RestAssured.given();
 		requestSpe.queryParam("page", "2");
