@@ -13,7 +13,9 @@ public class Basic {
 	{
 		RequestSpecification requestSpe = RestAssured.given();
 		requestSpe.header("Content-Type","application/json");
+		
 		requestSpe.auth().preemptive().basic("postman", "password");
+		
 		Response response = requestSpe.when().get("http://postman-echo.com/basic-auth");
 		
 		System.out.println(response.getBody().asPrettyString());	

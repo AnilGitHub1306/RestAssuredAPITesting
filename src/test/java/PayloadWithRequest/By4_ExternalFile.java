@@ -20,7 +20,6 @@ public class By4_ExternalFile {
 		JSONTokener jt = new JSONTokener(frRead);
 		JSONObject js = new JSONObject(jt);
 		
-		
 		RequestSpecification requestSpe = RestAssured.given();
 		requestSpe.baseUri("https://reqres.in/api/users");
 		requestSpe.header("x-api-key", "reqres-free-v1");
